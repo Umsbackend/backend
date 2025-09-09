@@ -36,7 +36,7 @@ return new class extends Migration
 
             // Diplôme + examen
             $table->json('dernier_diplome');
-            $table->boolean('examen_admission')->default(false);
+            $table->string('examen_admission', 50)->nullable();
 
             // Parents
             $table->json('pere');

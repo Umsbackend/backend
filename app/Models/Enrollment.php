@@ -5,6 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 
 class Enrollment extends Model
+
 {
     protected $fillable = [
         'matricule', 'photo', 'nom', 'postnom', 'prenom', 'sexe', 'etat_civil',
@@ -28,7 +29,7 @@ class Enrollment extends Model
         'supporteurs' => 'array',
         'mutuelle' => 'array',
         'documents' => 'array',
-        'examen_admission' => 'boolean',
+        // ✅ on supprime le cast 'examen_admission' => 'boolean',
         'engagements' => 'boolean',
     ];
 }
